@@ -23,6 +23,18 @@ Vibe Coding demostró que los desarrolladores pueden expresar intención y dejar
 
 La dificultad rara vez está solo en el modelo. Los cuellos de botella reales están en la coordinación: contexto fragmentado, demasiados handoffs manuales, cómputo ocioso, poca continuidad entre revisión de literatura y experimentación, y la falta de un sistema compartido donde humanos y agents vean el mismo estado de investigación.
 
+### Etapas de Autonomía del Agent
+
+A medida que la confianza y las herramientas maduran, vibe research avanza naturalmente por tres etapas:
+
+| Etapa | Rol | Qué hace el Agent | Qué controlan los humanos |
+|-------|-----|-------------------|--------------------------|
+| **Etapa 1: Agent como Pasante** | Solo ejecución | Ejecuta experimentos diseñados por humanos. Sin propuestas de ideas ni preguntas de investigación — solo throughput confiable en tareas bien definidas. | Definición del problema, diseño experimental, interpretación, todas las decisiones. |
+| **Etapa 2: Agent como Investigador** | Investigación independiente dentro de una pregunta | Se hace cargo de una research question de principio a fin. Auto-itera a nivel de experimento: propone experimentos, los ejecuta, interpreta resultados y mejora — todo dentro del límite de una pregunta de investigación. | Formulación de preguntas de investigación, priorización entre preguntas, juicio final. |
+| **Etapa 3: Agent como Líder de Investigación** | Autonomía completa del proyecto | Dirige un proyecto de investigación completo. Formula preguntas de investigación, construye y prueba hipótesis, decide cuáles aceptar o rechazar, y traza la dirección de la investigación. | Supervisión estratégica, revisión ética, decisiones de publicación. |
+
+La mayoría de los equipos hoy operan en la Etapa 1. El objetivo del tooling de vibe research es hacer la Etapa 2 confiable y la Etapa 3 factible.
+
 <a id="core-principles"></a>
 ## Principios Básicos
 

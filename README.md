@@ -22,6 +22,18 @@ Vibe Coding showed that developers can express intent while AI handles more of t
 
 The hard part is rarely the model alone. The real bottlenecks are coordination, fragmented context, manual handoffs, idle compute, broken continuity between literature review and experimentation, and the lack of a shared system where humans and agents can see the same research state.
 
+### Stages of Agent Autonomy
+
+As trust and tooling mature, vibe research naturally progresses through three stages:
+
+| Stage | Role | What the Agent Does | What Humans Own |
+|-------|------|--------------------|-----------------| 
+| **Stage 1: Agent as Intern** | Execution only | Runs experiments designed by humans. No idea proposals, no research questions — just reliable throughput on well-scoped tasks. | Problem definition, experiment design, interpretation, all decisions. |
+| **Stage 2: Agent as Researcher** | Independent research within a question | Owns a single research question end-to-end. Self-loops at the experiment level: proposes experiments, runs them, interprets results, and iterates — all within the boundary of one research question. | Research question formulation, cross-question prioritization, final judgment. |
+| **Stage 3: Agent as Research Lead** | Full project autonomy | Drives an entire research project. Formulates research questions, builds and tests hypotheses, decides which to accept or reject, and charts the research direction. | Strategic oversight, ethical review, publication decisions. |
+
+Most teams today operate at Stage 1. The goal of vibe research tooling is to make Stage 2 reliable and Stage 3 feasible.
+
 ## Core Principles
 
 Borrowing from agent harness engineering and adapting it to research:
