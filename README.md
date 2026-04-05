@@ -1,6 +1,14 @@
 # Awesome Vibe Research [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <p align="center">
+  <strong>Humans steer. Agents execute. Research scales.</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Vincentwei1021/awesome-vibe-research"><img src="https://img.shields.io/github/stars/Vincentwei1021/awesome-vibe-research?style=social&label=%E2%AD%90%20Star%20if%20you%20believe%20research%20needs%20human%20steering" alt="GitHub stars"></a>
+</p>
+
+<p align="center">
   <strong>English</strong> • <a href="./README.zh-CN.md">简体中文</a> • <a href="./README.ja.md">日本語</a> • <a href="./README.es.md">Español</a>
 </p>
 
@@ -8,9 +16,11 @@
   <sub>The English version is the source of truth. Translations may lag slightly behind.</sub>
 </p>
 
-> A curated list of tools, frameworks, and resources for **vibe research** - the discipline of designing research environments, agent workflows, compute loops, and review systems so humans and AI agents can collaborate on literature, experiments, and reporting at scale.
+> A curated list of tools, frameworks, and resources for **vibe research** — the discipline of designing research environments, agent workflows, compute loops, and review systems so humans and AI agents can collaborate on literature, experiments, and reporting at scale.
 
 ## What is Vibe Research?
+
+**Vibe Research = Vibe Coding applied to research. Humans define the question. AI agents do the throughput. Humans approve before anything moves forward.**
 
 Vibe Coding showed that developers can express intent while AI handles more of the implementation.
 
@@ -21,6 +31,36 @@ Vibe Coding showed that developers can express intent while AI handles more of t
 - Humans remain responsible for steering, approval, interpretation, and final judgment.
 
 The hard part is rarely the model alone. The real bottlenecks are coordination, fragmented context, manual handoffs, idle compute, broken continuity between literature review and experimentation, and the lack of a shared system where humans and agents can see the same research state.
+
+### The Five Layers of Vibe Research
+
+Every reliable human-AI research system needs all five layers working together:
+
+```
+┌─────────────────────────────────────────────────────┐
+│  5. OBSERVABILITY                                   │
+│     Can you see what every agent is doing right now? │
+├─────────────────────────────────────────────────────┤
+│  4. TRUST                                           │
+│     Audit trails for every decision, not just the   │
+│     final output. Verifiable reasoning chains.      │
+├─────────────────────────────────────────────────────┤
+│  3. APPROVAL GATES                                  │
+│     Humans approve before agents act on anything    │
+│     that changes the research direction.            │
+├─────────────────────────────────────────────────────┤
+│  2. CONTEXT CONTINUITY                              │
+│     Research state persists across sessions, agents, │
+│     and weeks. Nothing is lost on restart.          │
+├─────────────────────────────────────────────────────┤
+│  1. ARCHITECTURE                                    │
+│     Agent roles, tool access, memory systems,       │
+│     compute orchestration. The environment design.  │
+└─────────────────────────────────────────────────────┘
+
+        ↑ Build from the bottom up.
+        ↑ Most failures happen in layers 2–4.
+```
 
 ### Stages of Agent Autonomy
 
@@ -33,7 +73,6 @@ As trust and tooling mature, vibe research naturally progresses through three st
 | **Stage 3: Agent as Research Lead** | Full project autonomy | Drives an entire research project. Formulates research questions, builds and tests hypotheses, decides which to accept or reject, and charts the research direction. | Strategic oversight, ethical review, publication decisions. |
 
 Most teams today operate at Stage 1. The goal of vibe research tooling is to make Stage 2 reliable and Stage 3 feasible.
-
 ## Core Principles
 
 Borrowing from agent harness engineering and adapting it to research:
@@ -213,6 +252,10 @@ These references are useful because `vibe research` is not just "let an LLM brow
 ## Contributing
 
 Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a PR.
+
+**Know a tool that belongs here?** Open a PR. **Building something in the Vibe Research space?** We want to list it.
+
+**If this list is useful to you, [give it a ⭐](https://github.com/Vincentwei1021/awesome-vibe-research)** — it helps others find it.
 
 ## License
 
