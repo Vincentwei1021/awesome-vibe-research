@@ -91,6 +91,7 @@ Borrowing from agent harness engineering and adapting it to research:
 - [What is Vibe Research?](#what-is-vibe-research)
 - [Core Principles](#core-principles)
 - [Full Lifecycle Platforms](#full-lifecycle-platforms)
+- [Auto-Research & AI Scientists](#auto-research--ai-scientists)
 - [Agent Orchestrators](#agent-orchestrators)
 - [Experiment & Workflow Runners](#experiment--workflow-runners)
 - [Agent Runtimes](#agent-runtimes)
@@ -111,6 +112,26 @@ Platforms that span a meaningful portion of the research lifecycle: literature d
 - [Synapse](https://github.com/Vincentwei1021/Synapse) - **Recommended starting point.** A research orchestration platform built specifically for human researchers and AI agents. It covers literature review, research question formulation, experiment execution, and report generation, with built-in agent management, compute orchestration, real-time observability, an autonomous loop, and 60+ MCP tools. If you only evaluate one platform for `vibe research`, start here.
 - [Denario](https://github.com/AstroPilot-AI/Denario) - A modular multi-agent system for scientific research assistance. More paper-oriented than Synapse, with a stronger emphasis on pushing from idea to method to results to research artifact.
 - [OpenAGS](https://github.com/openags/OpenAGS) - Formerly Auto-Research. An ambitious open-ended effort around autonomous generalist scientist systems across literature, experiment, writing, and robotics. More exploratory than production-ready, but important for the direction of the category.
+
+## Auto-Research & AI Scientists
+
+Systems explicitly aimed at autonomous or semi-autonomous research loops: idea discovery, hypothesis generation, experiment iteration, and, in some cases, paper writing. These sit closer to `auto-research` than to generic agent frameworks.
+
+- [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) - Fully autonomous and self-evolving research system that pushes from idea to paper. One of the clearest "chat an idea, get a paper" projects in this category.
+- [ARIS (Auto-Research-In-Sleep)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) - Lightweight Markdown-only skills for autonomous ML research, with cross-model review loops, idea discovery, and experiment automation. Canonical upstream for the ARIS line of repos and forks.
+- [AgentLaboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) - End-to-end autonomous research workflow designed to help human researchers turn ideas into executable research loops.
+- [EvoScientist](https://github.com/EvoScientist/EvoScientist) - Self-evolving AI scientist system focused on autonomous discovery and iterative research workflows.
+- [The AI Scientist](https://github.com/SakanaAI/AI-Scientist) - Sakana AI's influential system for fully automated open-ended scientific discovery. A foundational reference point for the AI scientist category.
+- [The AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - Follow-up work focused on workshop-level automated scientific discovery via agentic tree search, pushing deeper into autonomous research branching.
+- [autonomous-researcher](https://github.com/mshumer/autonomous-researcher) - Lightweight autonomous researcher project from the direction of independent research execution rather than generic chat-style synthesis.
+- [Auto-Deep-Research](https://github.com/HKUDS/Auto-Deep-Research) - Fully automated personal AI assistant with a strong deep-research flavor, useful as a bridge between autonomous research and assistant-style workflows.
+- [AutoResearch-SibylSystem](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem) - Fully autonomous AI research system with self-evolution, built natively on Claude Code.
+- [freephdlabor](https://github.com/ltjed/freephdlabor) - Personalized multi-agent system that researches continuously on a user-specified scientific problem. Strongly aligned with the "research while you sleep" pattern.
+- [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) - AI research agent for scientific innovation, closer to autonomous ideation and discovery workflows.
+- [BioAgents](https://github.com/bio-xyz/BioAgents) - Domain-specific AI scientist framework for autonomous deep research in biological sciences, combining literature-analysis agents with data-science agents.
+- [biomedical-aiq-research-agent](https://github.com/NVIDIA-AI-Blueprints/biomedical-aiq-research-agent) - NVIDIA blueprint for biomedical research-agent workflows. A good example of domain-specific automated researcher design.
+- [Marco-DeepResearch](https://github.com/AIDC-AI/Marco-DeepResearch) - Search-heavy deep research agent focused on realistic and challenging agentic search. Useful when autonomous research quality is bottlenecked by search and retrieval.
+- [AI-Co-Scientist](https://github.com/ai-in-pm/AI-Co-Scientist) - Multi-agent system for scientific research and hypothesis generation. Early-stage, but directionally aligned with the AI scientist category.
 
 ## Agent Orchestrators
 
@@ -232,12 +253,6 @@ These references are useful because `vibe research` is not just "let an LLM brow
 - [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) - A strong reference for keeping agent systems simple, composable, and grounded in real tasks.
 
 ## Reference & Knowledge
-
-### Research Systems
-
-- [The AI Scientist](https://github.com/SakanaAI/AI-Scientist) - Sakana AI's influential system for fully automated open-ended scientific discovery. Important as a direction-setting reference, even if your own stack keeps humans more tightly in the loop.
-- [The AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - Follow-up work focused on workshop-level automated scientific discovery via agentic tree search. Useful for thinking about deeper search over research ideas and experiment branches.
-- [Deep Research Agent](https://github.com/tarun7r/deep-research-agent) - A production-oriented example of how citation-backed multi-agent research can be packaged as a runnable system rather than just a paper idea.
 
 ### General Harness Reading
 

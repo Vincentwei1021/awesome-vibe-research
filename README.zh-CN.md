@@ -55,6 +55,7 @@ Vibe Coding 证明了开发者可以更多地表达意图, 再把越来越多的
 - [什么是 Vibe Research?](#what-is-vibe-research)
 - [核心原则](#core-principles)
 - [全生命周期平台](#full-lifecycle-platforms)
+- [Auto-Research 与 AI Scientists](#auto-research--ai-scientists)
 - [Agent 编排框架](#agent-orchestrators)
 - [实验与工作流运行器](#experiment--workflow-runners)
 - [Agent 运行时](#agent-runtimes)
@@ -76,6 +77,27 @@ Vibe Coding 证明了开发者可以更多地表达意图, 再把越来越多的
 - [Synapse](https://github.com/Vincentwei1021/Synapse) - **推荐作为首选入口。** 这是一个专门面向 human researchers 与 AI agents 协作的研究编排平台。它覆盖文献综述、研究问题形成、实验执行与报告生成, 并内置 agent 管理、算力编排、实时可观测性、自主循环以及 60+ MCP tools。如果你只打算评估一个 `vibe research` 平台, 建议从它开始。
 - [Denario](https://github.com/AstroPilot-AI/Denario) - 面向 scientific research assistance 的模块化 multi-agent system。相较于 Synapse, 它更偏向论文产出导向, 更强调从 idea 到 method, 再到 results 与 research artifact 的推进。
 - [OpenAGS](https://github.com/openags/OpenAGS) - 即原来的 Auto-Research。一个更具探索性的通用 scientist agent 方向, 试图覆盖文献、实验、写作乃至机器人等更完整的科研闭环。相比生产化系统更偏前沿探索, 但对理解这一类别的发展很有帮助。
+
+<a id="auto-research--ai-scientists"></a>
+## Auto-Research 与 AI Scientists
+
+这类系统更明确地面向 autonomous 或 semi-autonomous research loops: idea discovery、hypothesis generation、experiment iteration，以及在某些情况下的 paper writing。相比通用 agent frameworks，它们更接近 `auto-research` 本身。
+
+- [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) - 一个 fully autonomous 且 self-evolving 的研究系统，试图从 idea 直接推进到 paper，是这一类里最接近“chat an idea, get a paper”的项目之一。
+- [ARIS (Auto-Research-In-Sleep)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) - 面向 autonomous ML research 的轻量 Markdown-only skills 集合，强调 cross-model review loops、idea discovery 与 experiment automation。这里收录的是 ARIS 相关仓库与 forks 的 canonical upstream。
+- [AgentLaboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) - 端到端 autonomous research workflow，帮助 human researchers 把研究想法变成可执行的研究循环。
+- [EvoScientist](https://github.com/EvoScientist/EvoScientist) - 聚焦 autonomous discovery 与 iterative research workflows 的 self-evolving AI scientist system。
+- [The AI Scientist](https://github.com/SakanaAI/AI-Scientist) - Sakana AI 提出的 influential system，目标是 fully automated open-ended scientific discovery，是 AI scientist 这一类别的重要基准参照。
+- [The AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - 面向 workshop-level automated scientific discovery 与 agentic tree search 的后续版本，进一步推进了 autonomous research branching 的方向。
+- [autonomous-researcher](https://github.com/mshumer/autonomous-researcher) - 一个更偏向独立研究执行而不是通用 chat-style synthesis 的 lightweight autonomous researcher project。
+- [Auto-Deep-Research](https://github.com/HKUDS/Auto-Deep-Research) - 一个 fully automated personal AI assistant，同时带有很强的 deep-research 色彩，适合作为 autonomous research 与 assistant-style workflows 之间的桥梁。
+- [AutoResearch-SibylSystem](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem) - 基于 Claude Code 原生构建的 fully autonomous AI research system，并强调 self-evolution。
+- [freephdlabor](https://github.com/ltjed/freephdlabor) - 可围绕用户指定 scientific problem 持续研究的 personalized multi-agent system，很符合“research while you sleep”的模式。
+- [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) - 面向 scientific innovation 的 AI research agent，更偏 autonomous ideation 与 discovery workflows。
+- [BioAgents](https://github.com/bio-xyz/BioAgents) - 面向 biological sciences 的 domain-specific AI scientist framework，结合 literature-analysis agents 与 data-science agents 做 autonomous deep research。
+- [biomedical-aiq-research-agent](https://github.com/NVIDIA-AI-Blueprints/biomedical-aiq-research-agent) - NVIDIA 提供的 biomedical research-agent workflow blueprint，是 domain-specific automated researcher design 的一个代表。
+- [Marco-DeepResearch](https://github.com/AIDC-AI/Marco-DeepResearch) - 更偏 search-heavy 的 deep research agent，适合需要把 autonomous research 质量建立在更强检索与搜索能力上的场景。
+- [AI-Co-Scientist](https://github.com/ai-in-pm/AI-Co-Scientist) - 面向 scientific research 与 hypothesis generation 的 multi-agent system。虽然还偏早期，但方向上很贴合 AI scientist 这一类别。
 
 <a id="agent-orchestrators"></a>
 ## Agent 编排框架
@@ -208,12 +230,6 @@ Runtimes 让 agents 能跨会话、跨渠道、跨长任务持续运行。对研
 
 <a id="reference--knowledge"></a>
 ## 参考资料与知识
-
-### 研究系统
-
-- [The AI Scientist](https://github.com/SakanaAI/AI-Scientist) - Sakana AI 提出的 influential system, 目标是 fully automated open-ended scientific discovery。即便你的系统更强调 human-in-the-loop, 它依然是理解研究自动化上限的重要参考。
-- [The AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - 聚焦 workshop-level automated scientific discovery 与 agentic tree search 的后续版本, 对理解“更深层研究分支搜索”很有帮助。
-- [Deep Research Agent](https://github.com/tarun7r/deep-research-agent) - 一个 production-oriented 的例子, 展示 citation-backed multi-agent research system 如何被包装成可运行系统而不只是概念验证。
 
 ### 通用 Harness 阅读材料
 

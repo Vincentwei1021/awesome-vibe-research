@@ -55,6 +55,7 @@ agent harness engineering の考え方を研究向けに言い換えると、次
 - [Vibe Research とは?](#what-is-vibe-research)
 - [基本原則](#core-principles)
 - [フルライフサイクル・プラットフォーム](#full-lifecycle-platforms)
+- [Auto-Research と AI Scientists](#auto-research--ai-scientists)
 - [Agent Orchestrators](#agent-orchestrators)
 - [実験とワークフロー実行基盤](#experiment--workflow-runners)
 - [Agent Runtimes](#agent-runtimes)
@@ -76,6 +77,27 @@ agent harness engineering の考え方を研究向けに言い換えると、次
 - [Synapse](https://github.com/Vincentwei1021/Synapse) - **最初に評価する候補として推奨。** human researchers と AI agents の協働を前提に設計された研究オーケストレーション基盤です。文献レビュー、研究課題形成、実験実行、レポート生成をカバーし、agent 管理、計算資源のオーケストレーション、リアルタイム observability、自律ループ、60+ MCP tools を備えています。`vibe research` 向けに一つだけ見るなら、まずここから始める価値があります。
 - [Denario](https://github.com/AstroPilot-AI/Denario) - scientific research assistance 向けの modular multi-agent system。Synapse よりも論文成果物寄りで、idea から method、results、research artifact へ進める流れをより強く意識しています。
 - [OpenAGS](https://github.com/openags/OpenAGS) - 旧 Auto-Research。文献、実験、執筆、ロボティクスまで含むより広い scientist agent の方向性を探るプロジェクト。プロダクション志向というより探索的ですが、この分野の将来像を理解するうえで有益です。
+
+<a id="auto-research--ai-scientists"></a>
+## Auto-Research と AI Scientists
+
+このカテゴリは、autonomous または semi-autonomous な research loops を明示的に目指すシステムを集めています。idea discovery、hypothesis generation、experiment iteration、そして場合によっては paper writing まで含みます。汎用的な agent framework より、`auto-research` そのものに近い領域です。
+
+- [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) - idea から paper までを狙う fully autonomous かつ self-evolving な研究システム。このカテゴリの中でも「chat an idea, get a paper」に最も近いタイプの一つです。
+- [ARIS (Auto-Research-In-Sleep)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) - autonomous ML research 向けの軽量な Markdown-only skills 集合。cross-model review loops、idea discovery、experiment automation を重視しており、ARIS 系リポジトリ群の canonical upstream です。
+- [AgentLaboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) - human researchers が研究アイデアを実行可能な研究ループに変えるのを助ける、end-to-end autonomous research workflow。
+- [EvoScientist](https://github.com/EvoScientist/EvoScientist) - autonomous discovery と iterative research workflows に焦点を当てた self-evolving AI scientist system。
+- [The AI Scientist](https://github.com/SakanaAI/AI-Scientist) - Sakana AI による fully automated open-ended scientific discovery を目指す influential system であり、AI scientist カテゴリの重要な基準点です。
+- [The AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - workshop-level automated scientific discovery と agentic tree search に焦点を当てた続編で、autonomous research branching をさらに押し進めています。
+- [autonomous-researcher](https://github.com/mshumer/autonomous-researcher) - 汎用的な chat-style synthesis というより、独立した research execution の方向に寄った lightweight autonomous researcher project。
+- [Auto-Deep-Research](https://github.com/HKUDS/Auto-Deep-Research) - fully automated personal AI assistant でありつつ、strong deep-research flavor を持つプロジェクト。autonomous research と assistant-style workflows の橋渡しとして見やすいです。
+- [AutoResearch-SibylSystem](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem) - Claude Code 上にネイティブ構築された、self-evolution を備える fully autonomous AI research system。
+- [freephdlabor](https://github.com/ltjed/freephdlabor) - ユーザー指定の scientific problem に対して継続的に研究を回す personalized multi-agent system。"research while you sleep" 型の代表例です。
+- [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) - scientific innovation 向けの AI research agent。autonomous ideation と discovery workflows 寄りです。
+- [BioAgents](https://github.com/bio-xyz/BioAgents) - biological sciences 向けの domain-specific AI scientist framework。literature-analysis agents と data-science agents を組み合わせて autonomous deep research を行います。
+- [biomedical-aiq-research-agent](https://github.com/NVIDIA-AI-Blueprints/biomedical-aiq-research-agent) - NVIDIA による biomedical research-agent workflow blueprint。domain-specific automated researcher design の好例です。
+- [Marco-DeepResearch](https://github.com/AIDC-AI/Marco-DeepResearch) - realistic で challenging な agentic search に寄った、search-heavy な deep research agent。検索品質が自律研究の質を左右する場面で参考になります。
+- [AI-Co-Scientist](https://github.com/ai-in-pm/AI-Co-Scientist) - scientific research と hypothesis generation のための multi-agent system。まだ early-stage ですが、AI scientist カテゴリとの整合性は高いです。
 
 <a id="agent-orchestrators"></a>
 ## Agent Orchestrators
@@ -208,12 +230,6 @@ Runtimes は agents を複数セッション、複数チャネル、長時間タ
 
 <a id="reference--knowledge"></a>
 ## 参考資料と知識
-
-### 研究システム
-
-- [The AI Scientist](https://github.com/SakanaAI/AI-Scientist) - fully automated open-ended scientific discovery を目指す Sakana AI の代表的 system。human-in-the-loop を重視する場合でも、自動研究の上限を考えるうえで重要です。
-- [The AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - workshop-level automated scientific discovery と agentic tree search に焦点を当てた続編。研究アイデア探索の深さを考える参考になります。
-- [Deep Research Agent](https://github.com/tarun7r/deep-research-agent) - citation-backed な multi-agent research system を、概念実証ではなく runnable system として示した production-oriented な例です。
 
 ### 一般的な Harness 関連資料
 

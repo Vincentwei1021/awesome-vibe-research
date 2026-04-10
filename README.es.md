@@ -55,6 +55,7 @@ Tomando ideas de agent harness engineering y adaptándolas al trabajo de investi
 - [¿Qué Es Vibe Research?](#what-is-vibe-research)
 - [Principios Básicos](#core-principles)
 - [Plataformas de Ciclo Completo](#full-lifecycle-platforms)
+- [Auto-Research y AI Scientists](#auto-research--ai-scientists)
 - [Orquestadores de Agents](#agent-orchestrators)
 - [Ejecución de Experimentos y Workflows](#experiment--workflow-runners)
 - [Runtimes de Agents](#agent-runtimes)
@@ -76,6 +77,27 @@ Plataformas que cubren una parte relevante del ciclo completo de investigación:
 - [Synapse](https://github.com/Vincentwei1021/Synapse) - **Punto de partida recomendado.** Es una plataforma de orquestación de investigación diseñada específicamente para la colaboración entre human researchers y AI agents. Cubre revisión bibliográfica, formulación de preguntas de investigación, ejecución experimental y generación de informes, con agent management, orquestación de cómputo, observabilidad en tiempo real, un loop autónomo y más de 60 MCP tools. Si solo vas a evaluar una plataforma para `vibe research`, empieza aquí.
 - [Denario](https://github.com/AstroPilot-AI/Denario) - Sistema modular multi-agent para asistencia en investigación científica. Más orientado que Synapse hacia artefactos de investigación y papers, con más énfasis en el paso de idea a method, results y research artifact.
 - [OpenAGS](https://github.com/openags/OpenAGS) - Antes llamado Auto-Research. Un esfuerzo más exploratorio hacia scientist agents generalistas que abarcan literatura, experimentación, escritura e incluso robótica. Menos orientado a producción, pero importante para entender hacia dónde va la categoría.
+
+<a id="auto-research--ai-scientists"></a>
+## Auto-Research y AI Scientists
+
+Esta categoría agrupa sistemas orientados explícitamente a research loops autónomos o semi-autónomos: idea discovery, hypothesis generation, experiment iteration y, en algunos casos, paper writing. Están más cerca de `auto-research` que de los agent frameworks genéricos.
+
+- [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) - Sistema de investigación fully autonomous y self-evolving que empuja desde la idea hasta el paper. Es uno de los proyectos más cercanos al patrón de "chat an idea, get a paper".
+- [ARIS (Auto-Research-In-Sleep)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) - Conjunto ligero de Markdown-only skills para autonomous ML research, con foco en cross-model review loops, idea discovery y experiment automation. Aquí se enlaza el canonical upstream de la familia ARIS, no sus forks.
+- [AgentLaboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) - End-to-end autonomous research workflow pensado para ayudar a human researchers a convertir ideas en research loops ejecutables.
+- [EvoScientist](https://github.com/EvoScientist/EvoScientist) - Sistema self-evolving de AI scientist centrado en autonomous discovery e iterative research workflows.
+- [The AI Scientist](https://github.com/SakanaAI/AI-Scientist) - El sistema influyente de Sakana AI para fully automated open-ended scientific discovery, y una referencia central para la categoría de AI scientist.
+- [The AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - Continuación centrada en workshop-level automated scientific discovery mediante agentic tree search, empujando más lejos la ramificación autónoma de investigación.
+- [autonomous-researcher](https://github.com/mshumer/autonomous-researcher) - Proyecto ligero de autonomous researcher más orientado a ejecución independiente de investigación que a chat-style synthesis genérico.
+- [Auto-Deep-Research](https://github.com/HKUDS/Auto-Deep-Research) - Personal AI assistant fully automated con una fuerte orientación a deep research. Funciona bien como puente entre autonomous research y assistant-style workflows.
+- [AutoResearch-SibylSystem](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem) - Fully autonomous AI research system con self-evolution, construido de forma nativa sobre Claude Code.
+- [freephdlabor](https://github.com/ltjed/freephdlabor) - Sistema multi-agent personalizado que investiga de forma continua sobre un problema científico definido por el usuario. Está muy alineado con el patrón de "research while you sleep".
+- [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) - AI research agent para scientific innovation, más cercano a workflows de ideación y descubrimiento autónomos.
+- [BioAgents](https://github.com/bio-xyz/BioAgents) - Framework domain-specific de AI scientist para autonomous deep research en ciencias biológicas, combinando agents de análisis de literatura con agents de ciencia de datos.
+- [biomedical-aiq-research-agent](https://github.com/NVIDIA-AI-Blueprints/biomedical-aiq-research-agent) - Blueprint de NVIDIA para biomedical research-agent workflows. Buen ejemplo de diseño domain-specific de automated researcher.
+- [Marco-DeepResearch](https://github.com/AIDC-AI/Marco-DeepResearch) - Deep research agent muy orientado a búsqueda, útil cuando la calidad del autonomous research depende fuertemente de search y retrieval.
+- [AI-Co-Scientist](https://github.com/ai-in-pm/AI-Co-Scientist) - Sistema multi-agent para investigación científica e hypothesis generation. Sigue siendo early-stage, pero encaja bien en la categoría de AI scientist.
 
 <a id="agent-orchestrators"></a>
 ## Orquestadores de Agents
@@ -208,12 +230,6 @@ Estas referencias importan porque `vibe research` no es simplemente "hacer que u
 
 <a id="reference--knowledge"></a>
 ## Referencias y Conocimiento
-
-### Sistemas de Investigación
-
-- [The AI Scientist](https://github.com/SakanaAI/AI-Scientist) - Sistema influyente de Sakana AI para fully automated open-ended scientific discovery. Importante para entender el techo de la automatización científica, incluso si tu stack mantiene más control humano.
-- [The AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - Continuación centrada en workshop-level automated scientific discovery mediante agentic tree search. Útil para pensar búsquedas más profundas sobre ideas de investigación.
-- [Deep Research Agent](https://github.com/tarun7r/deep-research-agent) - Ejemplo orientado a producción de cómo un sistema multi-agent con citas puede empaquetarse como software ejecutable y no solo como idea.
 
 ### Lecturas Generales sobre Harnesses
 
