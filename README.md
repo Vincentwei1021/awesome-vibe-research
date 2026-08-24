@@ -242,6 +242,7 @@ Research harnesses become much more reusable when tools, agents, and repositorie
 - [OpenAlex Research MCP](https://github.com/oksure/openalex-research-mcp) - MCP server for scholarly search, citation analysis, trend discovery, and collaboration mapping via OpenAlex.
 - [arXiv MCP Server](https://github.com/anuj0456/arxiv-mcp-server) - MCP server for searching, analyzing, and exporting arXiv papers.
 - [Unpaywall MCP](https://github.com/ElliotPadfield/unpaywall-mcp) - MCP server for DOI metadata and open-access PDF retrieval via Unpaywall.
+- [Lune Research](https://github.com/RetrogradeLabs/lune-mcp-server) - MCP server for searching full text from peer-reviewed computer-science venues, traversing citation graphs, extracting cross-paper evidence, and checking claims against verbatim source passages.
 
 ## Methodologies & Workflows
 
