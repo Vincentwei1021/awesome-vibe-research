@@ -217,6 +217,7 @@ Runtimes 让 agents 能跨会话、跨渠道、跨长任务持续运行。对研
 - [OpenAlex Research MCP](https://github.com/oksure/openalex-research-mcp) - 基于 OpenAlex 的 scholarly search、citation analysis、trend discovery 与 collaboration mapping MCP server。
 - [arXiv MCP Server](https://github.com/anuj0456/arxiv-mcp-server) - 用于搜索、分析和导出 arXiv papers 的 MCP server。
 - [Unpaywall MCP](https://github.com/ElliotPadfield/unpaywall-mcp) - 通过 Unpaywall 获取 DOI metadata 与 open-access PDFs 的 MCP server。
+- [Lune Research](https://github.com/RetrogradeLabs/lune-mcp-server) - 面向同行评审计算机顶会论文全文检索、引文图谱遍历、跨论文证据提取与原文引述式论断核验的 MCP server。
 
 <a id="methodologies--workflows"></a>
 ## 方法论与工作流
